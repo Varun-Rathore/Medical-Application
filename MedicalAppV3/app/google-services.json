@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "168270181231",
+    "firebase_url": "https://medicalappv3.firebaseio.com",
+    "project_id": "medicalappv3",
+    "storage_bucket": "medicalappv3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168270181231:android:93de228e70fded370f2e9a",
+        "android_client_info": {
+          "package_name": "com.example.medicalappv3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168270181231-5mpapfqeqrn68gfruu3f4qr013ddimpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGMUJqk7wQ-6WDCdlgyQia8l2OTi-Xmlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168270181231-5mpapfqeqrn68gfruu3f4qr013ddimpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

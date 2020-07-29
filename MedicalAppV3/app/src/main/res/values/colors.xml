@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#AE6802</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="california">#FF9800</color>
+    <color name="electric_violet">#6200EE</color>
+    <color name="blue_gem">#3700B3</color>
+    <color name="sandwisp">#F3EAA0</color>
+    <color name="reef">#C7FD88</color>
+    <color name="silver_chalice">#AEAEAE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sushi">#8BC34A</color>
+    <color name="pomegranate">#F44336</color>
+    <color name="alto">#DEDEDE</color>
+    <color name="grandis">#FFD18D</color>
+    <color name="rajah">#F4B860</color>
+</resources>

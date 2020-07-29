@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:text="To ensure the proper working of our app we request you to remove the battery optimization\n\nTo remove the optimization click on ok and search for MedicalAppV3 and change optimization and restart the app" />

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/page"
+    android:elevation="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/med_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="Medicine name"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/med_name"
+        android:layout_alignBottom="@id/med_name"
+        android:layout_alignParentEnd="true"
+        android:gravity="right|center_vertical"
+        android:padding="10dp"
+        android:text="6:00 PM"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_name"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/sun"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selected"
+            android:padding="10dp"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/sun"
+            android:layout_alignBottom="@id/sun"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/sun"
+            android:background="@drawable/button_selected"
+            android:padding="10dp"
+            android:text="M"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/mon"
+            android:layout_alignBottom="@id/tue"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/mon"
+            android:background="@drawable/button_not_selected"
+            android:padding="10dp"
+            android:text="T"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/wed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/mon"
+            android:layout_alignBottom="@id/tue"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/tue"
+            android:background="@drawable/button_selected"
+            android:padding="10dp"
+            android:text="W"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/thu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/mon"
+            android:layout_alignBottom="@id/tue"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/wed"
+            android:background="@drawable/button_selected"
+            android:padding="10dp"
+            android:text="Th"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/fri"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/mon"
+            android:layout_alignBottom="@id/tue"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/thu"
+            android:background="@drawable/button_not_selected"
+            android:padding="10dp"
+            android:text="F"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/mon"
+            android:layout_alignBottom="@id/tue"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/fri"
+            android:background="@drawable/button_selected"
+            android:padding="10dp"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

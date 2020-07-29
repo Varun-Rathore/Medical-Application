@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back">
+
+    <ProgressBar
+        android:id="@+id/pgbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@id/mobile"
+        android:layout_alignEnd="@id/mobile"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_box"
+        android:hint="Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/email"
+        android:layout_alignStart="@id/mobile"
+        android:layout_alignEnd="@id/mobile"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_box"
+        android:hint="Username"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/uname"
+        android:layout_alignStart="@id/mobile"
+        android:layout_alignEnd="@id/mobile"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_box"
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <ImageButton
+        android:id="@+id/set_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pass"
+        android:layout_alignEnd="@id/pass"
+        android:layout_alignBottom="@id/pass"
+        android:background="@android:color/transparent"
+        android:src="@drawable/not_visible" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/pass"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_box"
+        android:hint="@string/first_name"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/pass"
+        android:layout_alignEnd="@+id/mobile"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/fname"
+        android:background="@drawable/text_box"
+        android:hint="@string/last_name"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fname"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_box"
+        android:hint="@string/mobile_number"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mobile"
+        android:layout_alignStart="@+id/fname"
+        android:layout_alignEnd="@+id/fname"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_box"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mobile"
+        android:layout_alignStart="@+id/lname"
+        android:layout_alignTop="@id/age"
+        android:layout_alignEnd="@+id/lname"
+        android:layout_alignBottom="@+id/age"
+        android:background="@drawable/spinner_border"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gen"
+        android:layout_alignTop="@id/gen"
+        android:layout_alignEnd="@id/gen"
+        android:layout_alignBottom="@id/gen"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:src="@drawable/drop_down" />
+    <Spinner
+        android:id="@+id/pat_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/age"
+        android:layout_alignStart="@+id/age"
+        android:layout_alignEnd="@id/lname"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/spinner_border"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pat_doc"
+        android:layout_alignStart="@+id/pat_doc"
+        android:layout_alignEnd="@+id/pat_doc"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_back"
+        android:text="SIGN UP"
+        android:layout_marginHorizontal="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
